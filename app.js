@@ -21,3 +21,28 @@ c++
 c+=5;
 c**=3;
 console.log(c)
+const d="one";
+const e="two";
+console.log(d+e);
+const f='2'
+console.log(a+f)
+console.log(a-f)
+//Assignment operators
+let Name="Harini";
+let o=10;
+o+=Name;
+console.log(typeof o)
+//comparision operator
+const j=3;
+const k=9;
+const l=3;
+console.log('j>k',j>k);
+console.log('j>k',j<k);
+console.log('j>k',j==k);
+console.log('j>k',j==k);
+console.log('j>k',j>=k)
+console.log('___________________________________________________________');
+const m=11;
+const n='11';
+console.log(m==n)//it doesnt compare the types just compares the value
+console.log(m===n)

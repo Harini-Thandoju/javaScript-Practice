@@ -46,3 +46,21 @@ const m=11;
 const n='11';
 console.log(m==n)//it doesnt compare the types just compares the value
 console.log(m===n)
+//Logical operators
+const x=2;
+const y=3;
+const z=5;
+console.log('x==y',x==y)
+console.log('x!=y',x!=y)
+console.log('Truth table for AND')
+console.log('false && false',false && false)
+console.log('false && true',false && true)
+console.log('true && false',true && false)
+console.log('true && true',true && true)
+console.log(x>z && y>z)
+console.log('Truth table for OR')
+console.log('false || false',false || false)
+console.log('false || true',false || true)
+console.log('true || false',true || false)
+console.log('true || true',true ||true)
+console.log(x>z || y>z)

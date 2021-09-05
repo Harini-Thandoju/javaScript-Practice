@@ -1,27 +1,23 @@
-console.log('Hey this is my frst piece of js code!!!YAY')
-console.log(123456789)
-console.log({name:"Harini"})
-console.log(true)
-console.log(false)
-console.log(false,234567,'string',{name:"Harini"})
-console.warn("This is warning")
-console.error("This is an error")
-//comment line......if no.of line ctrl+/
-/*multi line comment*/
-//data types
-//primitive data types
-let age=19.87654;
+//Arithmetic operators
+let age=19;
+age=20;/*value or type anything can b changed if we ue let */
 console.log(age);
-console.log(typeof age);
-let Name='kmjnhbgf!@#$32345';
-console.log(typeof Name);
-var name ="harini";
-console.log(name);
-let brand=null;
-console.log(brand)
-//non-primitive datatype
-let array=[1,2,3,4,5];
-array.push("value")
-array.push(true)
-console.log(array)
-console.log(typeof array)
+const specific_name="Harini";/*it is fixed we cant reassign*/
+console.log(specific_name);
+
+const a=2;
+const b=5;
+
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+console.log(a**b)//2 pow 5(exponents)
+console.log(a%b);
+console.log('___________________________________________________________');
+let c=10;
+c++
+//c+=1  or c=c+1
+c+=5;
+c**=3;
+console.log(c)

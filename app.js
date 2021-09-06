@@ -1,39 +1,37 @@
-const rock =document.querySelector('#rock')
-console.log(rock)
-const paper=document.querySelector('#paper')
-console.log(paper)
-const scissor=document.querySelector('#scissor')
-console.log(scissor)
+const rock = document.querySelector('#rock')
+const paper = document.querySelector('#paper')
+const scissor = document.querySelector('#scissor')
+const board = document.querySelector("#board")
 
-function logName(name){//with paramerter
-    console.log(name)
-}
-logName("Harini")
-logName();//undefined to rectify this error:
 
-function logNames(Name="enter u r name"){//with paramerter
-    console.log(Name)
+const handler = (e) => {
+    const action = e.target.id
+//     if (action === 'rock') {
+//         board.innerHTML = "Rock crushes scissors"
+//     } else if (action === 'paper') {
+//         board.innerHTML = "Paper traps Rock"
+//     } else if (action === 'scissor') {
+//         board.innerHTML = "Scissor cuts paper"
+//     } else {
+//         board.innerHTML = "Click something"
+//     }
+// }
+
+switch (action) {
+    case "rock":
+        board.innerHTML = "Rock crushes scissors"
+        break;
+    case 'paper':
+        board.innerHTML = "Paper traps Rock"
+        break;
+    case 'scissor':
+        board.innerHTML = "Scissor cuts paper"
+        break;
+    default:
+        board.innerHTML = "Click something"
 }
-logNames();//default value will b inserted
-function logname(){//with out parameter
-    console.log("Teja")
-}
-logname()
-function log(Name="Harini" , age=20){
-console.log(Name + " you are " + age)
-}
-log()
-function add(a=0,b=0){
-//     const sum=a+b;
-//    return sum;
-return a+b
 }
 
- const result=add(12,40)
- console.log(result)
- //0r
- console.log(add(12,40))
- const added = (a = 0, b = 0) => {//we need not need function keyword
-    return a + b
-}
-console.log(added(12, 23))
+rock.addEventListener('click', handler)
+paper.addEventListener('click', handler)
+scissor.addEventListener('click', handler)

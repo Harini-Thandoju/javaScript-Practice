@@ -1,23 +1,34 @@
-const element= document.getElementById('select_me')
-console.log(element);
-console.log(typeof element);
-const element1= document.getElementsByClassName('heading')
-console.log(element1);
-const element2=document.getElementsByTagName('div')
-console.log(element2);
-const element3=document.querySelector('div#select_me');
-console.log(element3);
-element.innerHTML="This is from JS"//we can change the content of the element
-console.log(element);//shows the modified element
-element.style.color='cyan'
-element.style.fontSize="40px"
-//element.style="display:none"
-console.log(element.classList);//lists all the classes
-element.classList.add('five')
-console.log(element.classList);
-element.classList.remove('one')
-console.log(element.classList);
-const body=document.querySelector('body')
-console.log(body.classList.toggle('dark'));//body has the dark class removes doesnt have adds class like if else .
-const value=element.classList.contains('three')//contains checks class exist or not in boolean
-console.log(value)
+const rock =document.querySelector('#rock')
+console.log(rock)
+const paper=document.querySelector('#paper')
+console.log(paper)
+const scissor=document.querySelector('#scissor')
+console.log(scissor)
+
+function logName(name){//with paramerter
+    console.log(name)
+}
+logName("Harini")
+logName();//undefined to rectify this error:
+
+function logNames(Name="enter u r name"){//with paramerter
+    console.log(Name)
+}
+logNames();//default value will b inserted
+function logname(){//with out parameter
+    console.log("Teja")
+}
+logname()
+function log(Name="Harini" , age=20){
+console.log(Name + " you are " + age)
+}
+log()
+function add(a=0,b=0){
+//     const sum=a+b;
+//    return sum;
+return a+b
+}
+ const result=add(12,40)
+ console.log(result)
+ //0r
+ console.log(add(12,40))

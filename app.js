@@ -28,7 +28,14 @@ function add(a=0,b=0){
 //    return sum;
 return a+b
 }
+
  const result=add(12,40)
  console.log(result)
  //0r
  console.log(add(12,40))
+ const added = (a = 0, b = 0) => {
+    return a + b
+}
+
+
+console.log(added(12, 23))

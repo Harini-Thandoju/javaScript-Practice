@@ -33,9 +33,7 @@ return a+b
  console.log(result)
  //0r
  console.log(add(12,40))
- const added = (a = 0, b = 0) => {
+ const added = (a = 0, b = 0) => {//we need not need function keyword
     return a + b
 }
-
-
 console.log(added(12, 23))

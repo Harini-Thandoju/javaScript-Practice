@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <style></style>
+    <title>Document</title>
     <script defer src="./app.js"></script>
-    <title>JavaScript</title>
     <style>
-        body{
-            background-color: white;
-            
-        }
-        .dark{
-            background-color: black;
-        }
+      div.images img {
+        width: 200px;
+      }
+
+      div.images img:hover {
+        cursor: pointer;
+      }
     </style>
-</head>
-<body>
-    
-    <div class="one two three" id="select_me">Click me i will turn into dark 
-        </div>
-       <button>Click Me</button>
-    </body>
+  </head>
+
+  <body>
+    <div class="images">
+      <img
+        id="rock"
+        src="https://www.svgrepo.com/show/323925/rock.svg"
+        alt=""
+      />
+      <img
+        id="paper"
+        src="https://www.svgrepo.com/show/318481/paper.svg"
+        alt=""
+      />
+      <img
+        id="scissor"
+        src="https://www.svgrepo.com/show/168499/scissors.svg"
+        alt=""
+      />
+    </div>
+    <div id="board"></div>
+  </body>
 </html>

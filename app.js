@@ -1,10 +1,15 @@
-//event listeners
-const button = document.querySelector('button')
-const element=document.querySelector('body')
 
+//for loop
 
-button.addEventListener('click', () =>{
-    element.classList.toggle("dark")//if it has the dark class , toggle removes it, if it doesnt , toggle adds the dark class
-    // toggle is a method 
-   
-})
+for(var i=0;i<10;i++){
+    var age="19"
+    console.log('Iteration '+i)
+}
+console.log(i)
+console.log(age)
+//while loop
+let Iteration=1
+while(Iteration<10){
+    console.log(Iteration)
+    Iteration++
+}

@@ -14,8 +14,24 @@ while(Iteration<10){
     Iteration++
 }
 
-const balls = document.getElementsByClassName('.ball')
-const body=document.querySelector('body')
+const balls = document.querySelectorAll('.ball')
+// const balls = document.getElementsByClassName('ball')
+const body = document.querySelector('body')
+
+
+balls.forEach((ball, iteration) => {
+    const value = iteration * 50
+    ball.style = `transform:translateY(${value}px)`
+})
+//template strings
+let ages = 19
+let Name = "Sakshi"
+
+console.log('Your age is ' + ages)
+console.log(`Hi ${Name} Your age is ${ages}`)
+
+
+
 const arr=[1,2,3,4,5]
 const added=arr.push(6)
 console.log(arr.includes(5));//if ele presents return true or false
@@ -36,3 +52,4 @@ arr.forEach((element,iteration)=>{//expects to write func iterates to every ele 
     console.log(element,iteration)
     
 })
+

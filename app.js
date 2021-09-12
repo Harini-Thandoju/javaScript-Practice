@@ -1,55 +1,85 @@
+console.log("MERGED CLASS 1 ES6")
 
-//for loop
+var arr = [1,2,3,4];
+console.log(arr[2]);
 
-for(var i=0;i<10;i++){
-    var age="19"
-    console.log('Iteration '+i)
+var [one, two, three, four, five] = arr; //ES6 Destructuring
+console.log(three);
+console.log(four);
+console.log(five);
+
+
+function getscores() {
+    return [90,100];
 }
-console.log(i)
-console.log(age)
-//while loop
-let Iteration=1
-while(Iteration<10){
-    console.log(Iteration)
-    Iteration++
+
+let [x,y,z] = getscores();
+console.log(x);
+console.log(y);
+console.log(z);
+
+
+const obj = {
+    fullname: "Nikhil Agarwal",
+    email: "nikhilagarwaliitkgp@gmail.com",
+    age: 20
 }
 
-const balls = document.querySelectorAll('.ball')
-// const balls = document.getElementsByClassName('ball')
-const body = document.querySelector('body')
+console.log(obj.email)
 
+let {dum, age, email, fullname} = obj;
+console.log(fullname)
+console.log(dum)
 
-balls.forEach((ball, iteration) => {
-    const value = iteration * 50
-    ball.style = `transform:translateY(${value}px)`
-})
-//template strings
-let ages = 19
-let Name = "Sakshi"
-
-console.log('Your age is ' + ages)
-console.log(`Hi ${Name} Your age is ${ages}`)
-
-
-
-const arr=[1,2,3,4,5]
-const added=arr.push(6)
-console.log(arr.includes(5));//if ele presents return true or false
-console.log(arr.indexOf(1))//return index of specific ele
-console.log(arr.unshift(6));//adds the arr at the beggining of arr
-console.log(arr.shift())//remove the frst ele of arr
-console.log(arr.splice(2,2))//it will remove from 2ndindex 2 ele 
-console.log(added)
-
-console.log(arr)
-while(arr.length<15){
-    arr.push("Iteration")
+let person ={
+    firstname:"Harini",
+    lastname:"Thandoju",
+    age1:20,
+    middlename:"jshdbf"
 }
-console.log(arr.length)
- 
-//for each
-arr.forEach((element,iteration)=>{//expects to write func iterates to every ele and prints
-    console.log(element,iteration)
-    
-})
+let {age1,firstname,lastname,middlename=""} = person;
+console.log(age1);
+console.log(firstname)
+console.log(lastname)
+console.log(middlename)
 
+//ES-6 Arrow functions
+
+
+// function add(x,y){
+//     return x+y;
+// }
+// let add=function(x,y){
+//     return x+y;
+// }
+// console.log(add())//NAN(not any number)
+// console.log(add(10,20))
+
+let add=(x,y)=>x+y//ES-6 arrows are short form to function
+console.log(add(10,20))
+//or
+let add1=(x,y)=>{
+    return x+y;
+}
+console.log(add(10,20))
+
+const counter={//obj
+     count:2,
+    next:function(){//method
+        return ++(this.count)*100;//this means it is excecuting the object which is currently being used
+    },
+    key: this,//calling whole window
+agarwal:(x,y)=>{
+    //return --(this.count)//arrow func doesnt have this function in it
+    return --(counter.count)*100
+}
+}
+console.log(counter)
+console.log(counter.next());
+console.log(counter)
+console.log(counter.next());
+console.log(counter)
+console.log(counter.next());
+console.log(counter.agarwal())
+console.log(counter.agarwal())
+console.log(counter.agarwal())

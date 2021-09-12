@@ -1,4 +1,4 @@
-console.log("MERGED CLASS 1 ES6")
+
 
 var arr = [1,2,3,4];
 console.log(arr[2]);
